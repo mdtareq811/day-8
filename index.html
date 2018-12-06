@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="jumbotron mb-0">
+            <div class="container">
+                <h3>Some content goes here about something.</h3>
+                <p>Some content goes here about something.Some content goes here about something.</p>
+            </div>
+
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <div class="container">
+                <a href="" class="navbar-brand">
+                    <img src="images/youtube.png" alt="" style="height: 30px;"/>
+                </a>
+                <button type="button" class="navbar-toggler" data-target="#mainMenu" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav mr-auto">
+                        <li><a href="" class="nav-link">Home</a></li>
+                        <li><a href="" class="nav-link">About</a></li>
+                        <li class="dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Service</a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a href="" class="nav-link">Service One</a> </li>
+                                <li><a href="" class="nav-link">Service Two</a> </li>
+                                <li><a href="" class="nav-link">Service Three</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="nav-link">Gallery</a></li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li><a href="" class="nav-link">Login</a> </li>
+                        <li><a href="" class="nav-link">Sign Up</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="mainSlider" class="carousel slide" data-ride="carousel" data-interval="1000">
+            <ol class="carousel-indicators">
+                <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#mainSlider" data-slide-to="1"></li>
+                <li data-target="#mainSlider" data-slide-to="2"></li>
+                <li data-target="#mainSlider" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/srilanka_parliament.jpg" class="w-100" height="400" alt=""/>
+                    <div class="carousel-caption">
+                        <h3>Srilanka Parlahment</h3>
+                        <p>Some content goes there.Some content goes there</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/bangladesh_parliament.jpg" class="w-100" height="400" alt=""/>
+                    <div class="carousel-caption">
+                        <h3>Bangladesh Parlahment</h3>
+                        <p>Some content goes there.Some content goes there</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/japan_parliament.jpg" class="w-100" height="400" alt=""/>
+                    <div class="carousel-caption">
+                        <h3>Japan Parlahment</h3>
+                        <p>Some content goes there.Some content goes there</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/china_parliament.jpg" class="w-100" height="400" alt=""/>
+                    <div class="carousel-caption">
+                        <h3>China Parlahment</h3>
+                        <p>Some content goes there.Some content goes there</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#mainSlider" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#mainSlider" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <button type="button" data-toggle="modal" data-target="#mainModal" class="btn btn-success">Click Me</button>
+                    <button type="button" data-toggle="modal" data-target="#mainModal2" class="btn btn-success">Click Me2</button>
+
+                    <div class="modal fade" id="mainModal">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>Modal Header</h3>
+                                    <button type="button" class="cross" data-dismiss="modal">
+                                        &cross;
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2>Modal Body</h2>
+                                    <h2>Modal Body</h2>
+                                    <h2>Modal Body</h2>
+                                    <h2>Modal Body</h2>
+                                </div>
+                                <div class="modal-footer">
+                                    <h4>Modal Footer</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="mainModal2">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>Modal Header</h3>
+                                    <button type="button" class="cross" data-dismiss="modal">
+                                        &cross;
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2>Modal Body</h2>
+                                </div>
+                                <div class="modal-footer">
+                                    <h3>Modal Footer</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
